@@ -1,10 +1,21 @@
+/* eslint-disable no-useless-constructor */
 // ClassComponent.js
 import React from 'react';
 
-const ClassComponent = () => {
-    return (
-        <div className="class">
-            {/* Display class properties and methods */}
+class ClassComponent extends React.Component {
+    constructor(props, name = "", type = "", properties = []) {
+        super(props);
+
+        // Add your constructor logic here
+        this.name = name;
+        this.type = type;
+        this.properties = properties;
+    }
+    
+    render() {
+        return(<div className="class">
+            {
+        /*  */}
             <h2>Class</h2>
             <p>Properties:</p>
             <ul>
@@ -17,7 +28,7 @@ const ClassComponent = () => {
                 <li>Method 2()</li>
             </ul>
         </div>
-    );
+    )};
 };
 
 export default ClassComponent;

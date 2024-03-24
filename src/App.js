@@ -18,7 +18,16 @@ function App() {
         >
           Learn React
         </a>
-    <ClassComponent />
+        {/* Display ClassComponent */}
+
+        <ClassComponent />
+        <ClassComponent />
+        <ClassComponent />
+
+
+
+
+
       </header>
     </div>
   );
