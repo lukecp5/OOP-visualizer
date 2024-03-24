@@ -5,6 +5,7 @@ class ObjectComponent extends React.Component {
         super(props);
         // Add your constructor logic here
         this.name = "John Doe";
+        this.type = "Person";
     }
 
     render() {
